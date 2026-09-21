@@ -1,6 +1,11 @@
 import SwiftUI
 
 struct ContentView: View {
+    private let mediquoURL = URL(string: "https://www.mediquo.com/app")!
+    private let appStoreURL = URL(
+        string: "https://apps.apple.com/es/app/mediquo-chat-consulta-m%C3%A9dica/id1320968041"
+    )!
+
     var body: some View {
         Button(action: openMediquoApp) {
             Text("Abrir app de mediQuo")
@@ -18,11 +23,16 @@ struct ContentView: View {
     }
 
     private func openMediquoApp() {
-        guard let url = URL(string: "https://www.mediquo.com/app") else {
-            return
-        }
+        Task {
+            let didOpenApp = await UIApplication.shared.open(
+                mediquoURL,
+                options: [.universalLinksOnly: true]
+            )
 
-        UIApplication.shared.open(url)
+            if !didOpenApp {
+                await UIApplication.shared.open(appStoreURL)
+            }
+        }
     }
 }
 
