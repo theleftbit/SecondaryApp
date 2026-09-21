@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/surface">
+
+    <ImageButton
+        android:id="@+id/primary_button"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:layout_gravity="center"
+        android:background="@drawable/round_button"
+        android:contentDescription="@string/primary_action"
+        android:padding="0dp" />
+
+</FrameLayout>
+
