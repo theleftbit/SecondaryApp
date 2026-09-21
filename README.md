@@ -1,6 +1,6 @@
 # SecondaryApp
 
-Aplicacion minima nativa para iOS y Android. En ambas plataformas la interfaz contiene un unico boton redondo centrado en la pantalla.
+Aplicacion minima nativa para iOS y Android. En ambas plataformas la interfaz contiene un unico boton redondo centrado que abre `https://www.mediquo.com/app`.
 
 ## iOS
 
@@ -17,4 +17,3 @@ Requiere Xcode 26 o posterior y tiene iOS 26 como version minima.
 3. Ejecuta la configuracion `app` en un emulador o dispositivo.
 
 Requiere Android Studio compatible con Android Gradle Plugin 9.3.1. La aplicacion usa Android 7.0 (API 24) como version minima.
-

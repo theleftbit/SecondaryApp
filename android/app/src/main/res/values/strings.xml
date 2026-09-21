@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">SecondaryApp</string>
-    <string name="primary_action">Accion principal</string>
+    <string name="open_mediquo_app">Abrir app de mediQuo</string>
 </resources>
-
