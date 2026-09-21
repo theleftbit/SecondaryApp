@@ -4,12 +4,12 @@ plugins {
 
 android {
     namespace = "com.theleftbit.secondaryapp"
-    compileSdk = 36
+    compileSdk = 37
 
     defaultConfig {
         applicationId = "com.theleftbit.secondaryapp"
         minSdk = 24
-        targetSdk = 36
+        targetSdk = 37
         versionCode = 1
         versionName = "1.0"
     }
@@ -19,4 +19,3 @@ android {
         targetCompatibility = JavaVersion.VERSION_17
     }
 }
-
